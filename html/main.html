@@ -1,0 +1,36 @@
+
+<!-- search page -->
+<html>
+    <head>
+        <title>Search</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <script src="../js/index.js"></script>
+    </head>
+
+
+    <body>
+        <h1>Search Page</h1>
+
+        <div class="formSection">
+            <form action="main.html" method="get" role="search">
+
+                <a href="main.html">
+                    <img src="../images/pic.jpg" alt="well" class="pic"> <!--make image clickable and on click redirect to home page-->
+                </a>
+
+                <input type="text" name="q" autocomplete="off" size="100" id="field"> <!--search bar-->
+                <button class="button button1" type="submit">Search</button> <!--search buttons-->
+            </form>
+        </div>
+
+        <div class="logout"> <!--note to self: logout not finished, maybe use js for this instead of php-->
+            <button class="button button2" type="submit" name="logoutButton" onclick="logout()">Logout</button>
+            
+            <!-- <button class="button button2" type="button" name="logoutButton" onclick="logout()">Logout</button> -->
+        </div>
+
+        <div class="gcse-searchresults-only"></div>
+        <script async src="https://cse.google.com/cse.js?cx=92f1a9d51379501fa"></script>
+        
+    </body>
+</html>
